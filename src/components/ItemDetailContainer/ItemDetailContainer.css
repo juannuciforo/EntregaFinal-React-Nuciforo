@@ -1,0 +1,48 @@
+.item-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 40px;
+}
+
+.item-detail-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 35px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item-detail-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-detail-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item-detail-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item-detail-category {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.item-detail-price {
+    font-size: 18px;
+}

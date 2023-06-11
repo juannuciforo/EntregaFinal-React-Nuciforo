@@ -1,0 +1,25 @@
+.item-card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.item-header {
+    font-size: 1.25rem;
+}
+
+.item-description {
+    font-size: 0.875rem;
+}
+
+.info-price {
+    font-size: 0.75rem;
+}
+
+.info-stock {
+    font-size: 0.625rem;
+}
+
+.option {
+    margin: 5px;
+}

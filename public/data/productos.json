@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Remera Clásica",
+      "category": "remeras",
+      "description": "Remera de algodón de alta calidad con diseño clásico.",
+      "price": 19.99,
+      "stock" : 5
+    },
+    {
+      "id": 2,
+      "name": "Remera Estampada",
+      "category": "remeras",
+      "description": "Remera con estampado moderno y llamativo.",
+      "price": 24.99,
+      "stock" : 5
+    },
+    {
+      "id": 3,
+      "name": "Abrigo de Invierno",
+      "category": "abrigos",
+      "description": "Abrigo acolchado para el invierno con capucha y cierre frontal.",
+      "price": 59.99,
+      "stock" : 5
+    },
+    {
+      "id": 4,
+      "name": "Chaqueta de Cuero",
+      "category": "abrigos",
+      "description": "Chaqueta de cuero genuino con estilo clásico y resistente al viento.",
+      "price": 79.99,
+      "stock" : 5
+    },
+    {
+      "id": 5,
+      "name": "Pantalones Vaqueros",
+      "category": "pantalones",
+      "description": "Pantalones vaqueros de corte recto y tejido duradero.",
+      "price": 34.99,
+      "stock" : 5
+    },
+    {
+      "id": 6,
+      "name": "Pantalones Deportivos",
+      "category": "pantalones",
+      "description": "Pantalones deportivos cómodos y transpirables para actividades físicas.",
+      "price": 29.99,
+      "stock" : 5
+    },
+    {
+      "id": 7,
+      "name": "Collar de Plata",
+      "category": "accesorios",
+      "description": "Collar elegante de plata esterlina con colgante único.",
+      "price": 49.99,
+      "stock" : 5
+    },
+    {
+      "id": 8,
+      "name": "Reloj Deportivo",
+      "category": "accesorios",
+      "description": "Reloj deportivo resistente al agua con múltiples funciones y cronómetro.",
+      "price": 69.99,
+      "stock" : 5
+    }
+  ]
+  
