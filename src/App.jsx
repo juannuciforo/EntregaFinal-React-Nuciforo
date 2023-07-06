@@ -1,7 +1,10 @@
-import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import NavBar from "./components/commons/layout/NavBar";
+import ItemDetailContainer from "./components/containers/ItemDetailContainer/ItemDetailContainer";
+import ItemListContainer from "./components/containers/ItemListContainer/ItemListContainer";
+import { CartProvider } from './contexts/CartContext'
+import { Cart } from './components/commons/Cart/Cart'
+import Checkout from './components/commons/Checkout/Checkout.js'
 
 function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -21,15 +24,21 @@ function ItemListWrapper() {
 
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListWrapper />} />
-        <Route path="/category/:categoryId" element={<ItemListWrapper />} />
-        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-        <Route path="*" element={<h1>404 NOT FOUND</h1>} /> 
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListWrapper />} />
+            <Route path="/category/:categoryId" element={<ItemListWrapper />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<h1>404 NOT FOUND</h1>} /> 
+          </Routes>
+        </CartProvider>
+      </Router>
+    </div>
   );
 }
 

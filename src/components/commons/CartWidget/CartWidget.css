@@ -1,0 +1,32 @@
+.CartWidget {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.CartIcon {
+    display: flex;
+    align-items: center;
+}
+
+.CartImg {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.CartQuantity {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+.CartWidget:hover {
+    opacity: 0.8;
+}

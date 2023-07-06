@@ -1,0 +1,56 @@
+.Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .Cart h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .Cart .Option {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .Cart h3 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .Cart .Button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .Cart .Button:hover {
+    opacity: 0.8;
+  }
+  
+  .Cart .Option:hover {
+    text-decoration: underline;
+  }
+  
+  .product-link {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item-info {
+    font-size: 24px;
+    padding-top: 10px;
+  }

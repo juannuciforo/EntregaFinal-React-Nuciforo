@@ -1,0 +1,15 @@
+.cart-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centrar horizontalmente los elementos */
+  }
+  
+  .cart-item .col {
+    flex-grow: 1;
+    text-align: center; /* Centrar horizontalmente el contenido de cada columna */
+  }

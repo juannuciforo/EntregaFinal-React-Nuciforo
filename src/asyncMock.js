@@ -31,12 +31,11 @@ export const getProductsById = async (productId) => {
       fetch("/data/productos.json")
         .then((response) => response.json())
         .then((data) => {
-          const filteredProducts = data.filter(
-            (product) => product.id === productId
-          );
-          resolve(filteredProducts);
+          const filteredProduct = data.find((product) => product.id === parseInt(productId));
+          resolve(filteredProduct);
         })
         .catch((error) => reject(error));
     }, 600);
   });
 };
+

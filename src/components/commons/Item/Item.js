@@ -1,8 +1,23 @@
-import React from "react";
+import { useContext, React } from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../contexts/CartContext";
 
 const Item = ({ id, name, description, price, stock }) => {
+  const { cart } = useContext(CartContext);
+
+  const getAvailableStock = () => {
+    const cartItem = cart.find((item) => item.id === id);
+  
+    if (cartItem) {
+      const availableStock = stock - cartItem.quantity;
+      return availableStock >= 0 ? availableStock : "Sin Stock";
+    } else {
+      return stock > 0 ? stock : "Sin Stock";
+    }
+  };
+  
+
   return (
     <article className="item-card card">
       <header className="card-header">
@@ -12,7 +27,9 @@ const Item = ({ id, name, description, price, stock }) => {
         <h2 className="item-description card-text">{description}</h2>
         <p className="info-price card-text">Precio: ${price}</p>
         <p className="info-stock card-text">
-          Stock disponible: {stock} unidades
+          {getAvailableStock() === 0
+            ? "Sin Stock"
+            : `Stock disponible: ${getAvailableStock()} unidades`}
         </p>
       </section>
       <footer className="item-footer card-footer">
