@@ -19,12 +19,12 @@ const CheckoutForm = ({ onConfirm }) => {
     }
 
     return (
-        <div className='Container'>
+        <div className='Container text-center'>
             <form onSubmit={handleConfirm} className='Form'>
                 <label className='Label'>
                     Nombre
                     <input
-                        className='Input'
+                        className='Input text-center'
                         type='text'
                         value={name}
                         onChange={({ target }) => setName(target.value)}
@@ -34,7 +34,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Teléfono
                     <input
-                        className='Input'
+                        className='Input text-center'
                         type='text'
                         value={phone}
                         onChange={({ target }) => setPhone(target.value)}
@@ -44,14 +44,14 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label className='Label'>
                     Email
                     <input
-                        className='Input'
+                        className='Input text-center'
                         type='text'
                         value={email}
                         onChange={({ target }) => setEmail(target.value)}
                     />
                 </label>
 
-                <button type='submit'>Confirmar</button>
+                <button type='submit' className='mt-2'>Confirmar</button>
             </form>
         </div>
     )

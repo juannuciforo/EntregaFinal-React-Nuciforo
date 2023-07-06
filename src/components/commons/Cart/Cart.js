@@ -27,8 +27,9 @@ export const Cart = () => {
     <div className='Cart'>
       {cart.map(p => <CartItem key={p.id} {...p} />)}
       <h3>Total: ${totalValue().toFixed(2)}</h3>
-      <button onClick={handleClearCart} className='Button'>Limpiar carrito</button>
-      <Link to='/checkout' className='Option'>Checkout</Link>
+      <Link to='/checkout' className='btn btn-primary Button Checkout-button'>Checkout</Link>
+
+      <button onClick={handleClearCart} className='btn btn-danger mt-3'>Limpiar carrito</button>
     </div>
   );
 };
